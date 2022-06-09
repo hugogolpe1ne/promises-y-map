@@ -1,11 +1,14 @@
-import Nav from "./Nav"
-import Header from "./itemListContainer"
+import Nav from "./components/Nav"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 const App = () => {
+
     return (
         <>
-            <Header greating="Bienvenido a mi Tienda"/>
+            <Header/>
             <Nav/>
+            <Footer/>
         </>
     )
 }
