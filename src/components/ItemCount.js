@@ -1,6 +1,6 @@
 import {useState} from "react"
 
-const ItemCount = ({Stock=(6),Initial=(1),onAdd=()=>{}}) => {
+const ItemCount = ({Stock,Initial,onAdd=()=>{}}) => {
 
     const [contador, setContador] = useState(Initial)
     console.log(contador)
@@ -13,7 +13,7 @@ const ItemCount = ({Stock=(6),Initial=(1),onAdd=()=>{}}) => {
     }
     const disminuirContador = () => {
         console.log("disminuirContador")
-        if (contador >0){
+        if (contador >1){
             setContador(contador - 1)
         }
     }
